@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age calculator app</title>
+
+    <link rel="stylesheet" href="inde.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="top-side">
+        <div class="day-side">
+          <label for="day">DAY</label>
+          <input type="number" id="day" placeholder="DD" min="1" max="31" />
+          <p class="day-required">this side is required</p>
+        </div>
+        <div class="month-side">
+          <label for="month">MONTH</label>
+          <input type="number" id="month" placeholder="MM" min="1" max="12" />
+          <p class="month-required">this side is required</p>
+        </div>
+        <div class="year-side">
+          <label for="year">Year</label>
+          <input
+            type="number"
+            id="year"
+            placeholder="YYYY"
+            min="0"
+            max="2024"
+          />
+          <p class="year-required">this side is required</p>
+        </div>
+      </div>
+
+      <div class="mid-side">
+        <hr />
+
+        <button class="button" id="button">
+          <img src="assets/images/icon-arrow.svg" alt="icon" />
+        </button>
+      </div>
+
+      <div class="bottom-side">
+        <div class="years">
+          <span id="years-input">--</span>
+          <p>years</p>
+        </div>
+        <div class="months">
+          <span id="months-input">--</span>
+          <p>months</p>
+        </div>
+        <div class="days">
+          <span id="days-input">--</span>
+          <p>days</p>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
